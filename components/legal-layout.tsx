@@ -3,12 +3,10 @@ import { ScrollReveal } from '@/components/scroll-reveal'
 export function LegalLayout({
   eyebrow,
   title,
-  updated,
   sections,
 }: {
   eyebrow: string
   title: string
-  updated: string
   sections: { heading: string; paragraphs: string[] }[]
 }) {
   return (
@@ -26,9 +24,6 @@ export function LegalLayout({
           <h1 className="reveal mt-4 text-balance font-heading text-4xl uppercase leading-[0.95] tracking-tight text-foreground sm:text-6xl">
             {title}
           </h1>
-          <p className="reveal reveal-delay-1 mt-5 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
-            Utolsó frissítés: {updated}
-          </p>
         </div>
       </section>
 

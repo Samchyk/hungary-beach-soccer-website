@@ -48,7 +48,6 @@ export default function Page() {
     <LegalLayout
       eyebrow="Jogi · Sütik"
       title="Cookie szabályzat"
-      updated="2026. január"
       sections={sections}
     />
   )

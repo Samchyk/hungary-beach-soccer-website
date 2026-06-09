@@ -61,7 +61,6 @@ export default function Page() {
     <LegalLayout
       eyebrow="Jogi · Adatvédelem"
       title="Adatvédelmi tájékoztató"
-      updated="2026. január"
       sections={sections}
     />
   )

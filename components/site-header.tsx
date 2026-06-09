@@ -98,12 +98,13 @@ export function SiteHeader() {
           aria-hidden
           className="absolute -left-24 bottom-0 h-80 w-80 rounded-full bg-accent/20 blur-[120px]"
         />
-        <div className="relative mx-auto flex h-full max-w-7xl flex-col justify-center px-5 pt-20 sm:px-8">
-          <p className="mb-6 font-mono text-[11px] uppercase tracking-[0.4em] text-primary">
-            Navigáció
-          </p>
-          <nav className="flex flex-col">
-            {MAIN_NAV.map((item, i) => (
+        <div className="relative h-full overflow-y-auto overscroll-contain">
+          <div className="mx-auto flex min-h-full max-w-7xl flex-col justify-center px-5 py-24 sm:px-8">
+            <p className="mb-6 font-mono text-[11px] uppercase tracking-[0.4em] text-primary">
+              Navigáció
+            </p>
+            <nav className="flex flex-col">
+              {MAIN_NAV.map((item, i) => (
               <Link
                 key={item.href}
                 href={item.href}
@@ -125,8 +126,9 @@ export function SiteHeader() {
                   {item.desc}
                 </span>
               </Link>
-            ))}
-          </nav>
+              ))}
+            </nav>
+          </div>
         </div>
       </div>
     </>
